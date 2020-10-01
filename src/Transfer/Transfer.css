@@ -1,0 +1,71 @@
+.list {
+  height: 320px;
+  width: 200px;
+  border: 1px solid #ccc;
+  display: flex;
+  flex-direction: column;
+  user-select: none;
+}
+.list-hd,
+.list-bt {
+  flex: 1;
+  padding-left: 20px;
+  display: flex;
+  align-items: center;
+}
+.list-bt {
+  padding: 0;
+}
+.list-bd {
+  flex-basis: 246px;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  overflow: auto;
+  box-sizing: border-box;
+}
+
+.list-bd .item {
+  display: flex;
+  align-items: center;
+  padding: 5px 0 5px 20px;
+  cursor: pointer;
+}
+.list-bd .item:hover {
+  background-color: #eee;
+}
+.list-bd .item.disabled {
+  cursor: not-allowed;
+  color: #999;
+}
+.item-btn {
+  width: 14px;
+  height: 14px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  transition: border-color 0.1s;
+  cursor: pointer;
+}
+.item-btn:hover {
+  border-color: blue;
+}
+.item.selected .item-btn {
+  background-color: green;
+  border-color: green;
+}
+.list-bd .item.disabled .item-btn {
+  border-color: #ccc;
+  background-color: #eee;
+  cursor: not-allowed;
+}
+.item-bdy {
+  margin-left: 15px;
+  font-size: 15px;
+}
+.list-bt .item {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.list-bt .item .item-btn {
+  margin-left: 20px;
+}
