@@ -1,9 +1,13 @@
 import React from 'react'
 import './App.css'
-import Rate from './Rate/Rate.js'
+import Progress from './Progress/Progress.js'
 
 function App() {
-  return <Rate showText allowHalf onChange={(inx) => console.log(inx)}></Rate>
+  return (
+    <>
+      <Progress type="circle" percentage={0} status="success"></Progress>
+    </>
+  )
 }
 
 export default App
