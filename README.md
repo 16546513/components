@@ -7,3 +7,4 @@
 - Rate 评分
 - Transfer 穿梭框
 - Upload 上传
+- Badge 标记
